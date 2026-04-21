@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>더 좋은 라이프 | 미래를 위한 상조 가입</title>
+<title>어센틱금융그룹 나상균 | 미래를 위한 상조 가입</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,175 +18,176 @@
   html { scroll-behavior: smooth; }
   body { font-family: 'Noto Sans KR', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
 
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(15,39,68,0.97); backdrop-filter: blur(8px);
-    padding: 1rem 2rem;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-logo { font-family: 'Noto Serif KR', serif; color: var(--gold); font-size: 1.1rem; font-weight: 700; }
-  .nav-cta {
-    background: var(--gold); color: var(--navy);
-    border: none; border-radius: 4px; padding: 0.45rem 1.2rem;
-    font-family: 'Noto Sans KR', sans-serif; font-size: 0.85rem; font-weight: 700;
-    cursor: pointer; text-decoration: none; transition: background 0.2s;
-  }
-  .nav-cta:hover { background: var(--gold-light); }
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+background: rgba(15,39,68,0.97); backdrop-filter: blur(8px);
+padding: 1rem 2rem;
+display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-family: ‘Noto Serif KR’, serif; color: var(–gold); font-size: 1.1rem; font-weight: 700; }
+.nav-cta {
+background: var(–gold); color: var(–navy);
+border: none; border-radius: 4px; padding: 0.45rem 1.2rem;
+font-family: ‘Noto Sans KR’, sans-serif; font-size: 0.85rem; font-weight: 700;
+cursor: pointer; text-decoration: none; transition: background 0.2s;
+}
+.nav-cta:hover { background: var(–gold-light); }
 
-  .hero {
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 60%, #1e4d7a 100%);
-    min-height: 100vh;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 7rem 2rem 5rem; position: relative; overflow: hidden;
-  }
-  .hero::before {
-    content: ''; position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-  .hero-badge {
-    display: inline-block;
-    background: rgba(201,168,76,0.2); border: 1px solid rgba(201,168,76,0.5);
-    color: var(--gold-light); font-size: 0.78rem; font-weight: 500;
-    padding: 0.35rem 1rem; border-radius: 50px; letter-spacing: 0.05em; margin-bottom: 1.8rem;
-  }
-  .hero h1 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
-    color: var(--white); line-height: 1.4; margin-bottom: 1.2rem; max-width: 640px;
-  }
-  .hero h1 span { color: var(--gold); }
-  .hero p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2.5rem; max-width: 500px; line-height: 1.9; }
-  .hero-cta {
-    display: inline-block; background: var(--gold); color: var(--navy);
-    font-weight: 700; font-size: 1rem; padding: 1rem 2.5rem; border-radius: 6px;
-    text-decoration: none; transition: transform 0.2s, background 0.2s;
-    box-shadow: 0 4px 20px rgba(201,168,76,0.4);
-  }
-  .hero-cta:hover { transform: translateY(-2px); background: var(--gold-light); }
-  .hero-cards { display: flex; gap: 1rem; margin-top: 3.5rem; flex-wrap: wrap; justify-content: center; }
-  .hero-card {
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 10px; padding: 1.2rem 1.8rem; color: var(--white); min-width: 200px;
-  }
-  .hero-card-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
-  .hero-card-value { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 600; color: var(--gold-light); line-height: 1.5; }
-  .hero-key {
-    margin-top: 1.5rem;
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3);
-    border-radius: 8px; padding: 1rem 1.5rem;
-    color: rgba(255,255,255,0.85); font-size: 0.88rem; max-width: 560px; text-align: center;
-  }
-  .hero-key strong { color: var(--gold); }
+.hero {
+background: linear-gradient(160deg, var(–navy) 0%, var(–navy-light) 60%, #1e4d7a 100%);
+min-height: 100vh;
+display: flex; flex-direction: column; align-items: center; justify-content: center;
+text-align: center; padding: 7rem 2rem 5rem; position: relative; overflow: hidden;
+}
+.hero::before {
+content: ‘’; position: absolute; inset: 0;
+background: url(“data:image/svg+xml,%3Csvg width=‘60’ height=‘60’ viewBox=‘0 0 60 60’ xmlns=‘http://www.w3.org/2000/svg’%3E%3Cg fill=‘none’ fill-rule=‘evenodd’%3E%3Cg fill=’%23ffffff’ fill-opacity=‘0.03’%3E%3Cpath d=‘M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z’/%3E%3C/g%3E%3C/g%3E%3C/svg%3E”);
+}
+.hero-badge {
+display: inline-block;
+background: rgba(201,168,76,0.2); border: 1px solid rgba(201,168,76,0.5);
+color: var(–gold-light); font-size: 0.78rem; font-weight: 500;
+padding: 0.35rem 1rem; border-radius: 50px; letter-spacing: 0.05em; margin-bottom: 1.8rem;
+}
+.hero h1 {
+font-family: ‘Noto Serif KR’, serif;
+font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
+color: var(–white); line-height: 1.4; margin-bottom: 1.2rem; max-width: 640px;
+}
+.hero h1 span { color: var(–gold); }
+.hero p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2.5rem; max-width: 500px; line-height: 1.9; }
+.hero-cta {
+display: inline-block; background: var(–gold); color: var(–navy);
+font-weight: 700; font-size: 1rem; padding: 1rem 2.5rem; border-radius: 6px;
+text-decoration: none; transition: transform 0.2s, background 0.2s;
+box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+}
+.hero-cta:hover { transform: translateY(-2px); background: var(–gold-light); }
+.hero-cards { display: flex; gap: 1rem; margin-top: 3.5rem; flex-wrap: wrap; justify-content: center; }
+.hero-card {
+background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+border-radius: 10px; padding: 1.2rem 1.8rem; color: var(–white); min-width: 200px;
+}
+.hero-card-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+.hero-card-value { font-family: ‘Noto Serif KR’, serif; font-size: 1rem; font-weight: 600; color: var(–gold-light); line-height: 1.5; }
+.hero-key {
+margin-top: 1.5rem;
+background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3);
+border-radius: 8px; padding: 1rem 1.5rem;
+color: rgba(255,255,255,0.85); font-size: 0.88rem; max-width: 560px; text-align: center;
+}
+.hero-key strong { color: var(–gold); }
 
-  section { padding: 5rem 2rem; }
-  .container { max-width: 1000px; margin: 0 auto; }
-  .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
-  .section-title { font-family: 'Noto Serif KR', serif; font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--navy); line-height: 1.4; margin-bottom: 0.8rem; }
-  .section-sub { color: var(--text-muted); font-size: 1rem; margin-bottom: 3rem; }
+section { padding: 5rem 2rem; }
+.container { max-width: 1000px; margin: 0 auto; }
+.section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(–gold); margin-bottom: 0.8rem; }
+.section-title { font-family: ‘Noto Serif KR’, serif; font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(–navy); line-height: 1.4; margin-bottom: 0.8rem; }
+.section-sub { color: var(–text-muted); font-size: 1rem; margin-bottom: 3rem; }
 
-  .benefits { background: var(--white); }
-  .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
-  .benefit-card {
-    border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.8rem;
-    background: var(--cream); transition: transform 0.25s, box-shadow 0.25s;
-    position: relative; overflow: hidden;
-  }
-  .benefit-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
-  .benefit-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(15,39,68,0.1); }
-  .benefit-question { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-  .benefit-title { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 0.8rem; }
-  .benefit-desc { font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; }
-  .benefit-icon { width: 44px; height: 44px; background: var(--navy); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; font-size: 1.3rem; }
+.benefits { background: var(–white); }
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.benefit-card {
+border: 1px solid var(–border); border-radius: 12px; padding: 2rem 1.8rem;
+background: var(–cream); transition: transform 0.25s, box-shadow 0.25s;
+position: relative; overflow: hidden;
+}
+.benefit-card::before { content: ‘’; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(–gold); }
+.benefit-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(15,39,68,0.1); }
+.benefit-question { font-size: 0.82rem; color: var(–text-muted); margin-bottom: 0.5rem; }
+.benefit-title { font-family: ‘Noto Serif KR’, serif; font-size: 1.25rem; font-weight: 700; color: var(–navy); margin-bottom: 0.8rem; }
+.benefit-desc { font-size: 0.92rem; color: var(–text-muted); line-height: 1.8; }
+.benefit-icon { width: 44px; height: 44px; background: var(–navy); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; font-size: 1.3rem; }
 
-  .services { background: var(--cream); }
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; }
-  .service-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1.8rem 1.5rem; text-align: center; }
-  .service-num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: var(--cream-dark); margin-bottom: 0.5rem; }
-  .service-title { font-weight: 700; font-size: 1rem; color: var(--navy); margin-bottom: 0.5rem; }
-  .service-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+.services { background: var(–cream); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; }
+.service-card { background: var(–white); border: 1px solid var(–border); border-radius: 10px; padding: 1.8rem 1.5rem; text-align: center; }
+.service-num { font-family: ‘Noto Serif KR’, serif; font-size: 2rem; font-weight: 700; color: var(–cream-dark); margin-bottom: 0.5rem; }
+.service-title { font-weight: 700; font-size: 1rem; color: var(–navy); margin-bottom: 0.5rem; }
+.service-desc { font-size: 0.85rem; color: var(–text-muted); line-height: 1.7; }
 
-  .why { background: var(--navy); color: var(--white); }
-  .why .section-title { color: var(--white); }
-  .why .section-sub { color: rgba(255,255,255,0.65); }
-  .why-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 2.5rem; }
-  .why-text { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.9; }
-  .why-text p { margin-bottom: 1rem; }
-  .why-text strong { color: var(--gold); font-weight: 700; }
-  .why-points { display: flex; flex-direction: column; gap: 1rem; }
-  .why-point {
-    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 10px; padding: 1.2rem 1.5rem;
-    display: flex; align-items: flex-start; gap: 1rem;
-  }
-  .why-point-icon { width: 36px; height: 36px; flex-shrink: 0; background: var(--gold); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
-  .why-point-title { font-weight: 700; font-size: 0.95rem; color: var(--white); margin-bottom: 0.2rem; }
-  .why-point-desc { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+.why { background: var(–navy); color: var(–white); }
+.why .section-title { color: var(–white); }
+.why .section-sub { color: rgba(255,255,255,0.65); }
+.why-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 2.5rem; }
+.why-text { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.9; }
+.why-text p { margin-bottom: 1rem; }
+.why-text strong { color: var(–gold); font-weight: 700; }
+.why-points { display: flex; flex-direction: column; gap: 1rem; }
+.why-point {
+background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+border-radius: 10px; padding: 1.2rem 1.5rem;
+display: flex; align-items: flex-start; gap: 1rem;
+}
+.why-point-icon { width: 36px; height: 36px; flex-shrink: 0; background: var(–gold); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+.why-point-title { font-weight: 700; font-size: 0.95rem; color: var(–white); margin-bottom: 0.2rem; }
+.why-point-desc { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
 
-  .form-section { background: var(--white); }
-  .form-wrapper { max-width: 600px; margin: 0 auto; }
-  .event-badge { display: inline-block; background: #e8372a; color: var(--white); font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 4px; letter-spacing: 0.04em; margin-bottom: 1rem; }
-  .event-title { font-family: 'Noto Serif KR', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); background: var(--cream); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; text-align: center; }
-  .event-title small { display: block; font-size: 0.82rem; color: var(--text-muted); margin-top: 0.3rem; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; }
-  .form-group { margin-bottom: 1.2rem; }
-  .form-label { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
-  .form-label span { color: #e8372a; }
-  .form-input, .form-select {
-    width: 100%; padding: 0.75rem 1rem;
-    border: 1px solid var(--border); border-radius: 6px;
-    font-family: 'Noto Sans KR', sans-serif; font-size: 0.95rem;
-    color: var(--text); background: var(--cream);
-    transition: border-color 0.2s; appearance: none;
-  }
-  .form-input:focus, .form-select:focus { outline: none; border-color: var(--navy); background: var(--white); }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-section { background: var(–white); }
+.form-wrapper { max-width: 600px; margin: 0 auto; }
+.event-badge { display: inline-block; background: #e8372a; color: var(–white); font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 4px; letter-spacing: 0.04em; margin-bottom: 1rem; }
+.event-title { font-family: ‘Noto Serif KR’, serif; font-size: 1.1rem; font-weight: 700; color: var(–navy); background: var(–cream); border: 1px solid var(–border); border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; text-align: center; }
+.event-title small { display: block; font-size: 0.82rem; color: var(–text-muted); margin-top: 0.3rem; font-family: ‘Noto Sans KR’, sans-serif; font-weight: 400; }
+.form-group { margin-bottom: 1.2rem; }
+.form-label { display: block; font-size: 0.88rem; font-weight: 700; color: var(–navy); margin-bottom: 0.4rem; }
+.form-label span { color: #e8372a; }
+.form-input, .form-select {
+width: 100%; padding: 0.75rem 1rem;
+border: 1px solid var(–border); border-radius: 6px;
+font-family: ‘Noto Sans KR’, sans-serif; font-size: 0.95rem;
+color: var(–text); background: var(–cream);
+transition: border-color 0.2s; appearance: none;
+}
+.form-input:focus, .form-select:focus { outline: none; border-color: var(–navy); background: var(–white); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-  .terms-box { background: var(--cream); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-  .terms-title { font-weight: 700; font-size: 0.88rem; color: var(--navy); margin-bottom: 0.8rem; }
-  .term-item { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 0.8rem; }
-  .term-item:last-child { margin-bottom: 0; }
-  .term-item input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; accent-color: var(--navy); }
-  .term-item label { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; cursor: pointer; }
-  .term-item label strong { color: var(--navy); font-weight: 700; }
+.terms-box { background: var(–cream); border: 1px solid var(–border); border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
+.terms-title { font-weight: 700; font-size: 0.88rem; color: var(–navy); margin-bottom: 0.8rem; }
+.term-item { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 0.8rem; }
+.term-item:last-child { margin-bottom: 0; }
+.term-item input[type=“checkbox”] { margin-top: 3px; flex-shrink: 0; accent-color: var(–navy); }
+.term-item label { font-size: 0.82rem; color: var(–text-muted); line-height: 1.5; cursor: pointer; }
+.term-item label strong { color: var(–navy); font-weight: 700; }
 
-  .submit-btn {
-    width: 100%; background: var(--navy); color: var(--white);
-    border: none; border-radius: 6px; padding: 1rem;
-    font-family: 'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 700;
-    cursor: pointer; transition: background 0.2s, transform 0.15s;
-    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-  }
-  .submit-btn:hover { background: #1a3a5c; transform: translateY(-1px); }
-  .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-  .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: none; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .form-note { text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.8rem; }
+.submit-btn {
+width: 100%; background: var(–navy); color: var(–white);
+border: none; border-radius: 6px; padding: 1rem;
+font-family: ‘Noto Sans KR’, sans-serif; font-size: 1rem; font-weight: 700;
+cursor: pointer; transition: background 0.2s, transform 0.15s;
+display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.submit-btn:hover { background: #1a3a5c; transform: translateY(-1px); }
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.form-note { text-align: center; font-size: 0.78rem; color: var(–text-muted); margin-top: 0.8rem; }
 
-  .result-box { display: none; border-radius: 10px; padding: 2rem; margin-top: 1rem; text-align: center; }
-  .result-box.success { background: #f0f9f4; border: 1px solid #a8d5b5; }
-  .result-box.success h3 { color: #1a6b3a; font-size: 1.1rem; margin-bottom: 0.5rem; }
-  .result-box.success p { color: #2d8a52; font-size: 0.9rem; }
-  .result-box.error { background: #fff5f5; border: 1px solid #f5c6c6; }
-  .result-box.error h3 { color: #c0392b; font-size: 1.05rem; margin-bottom: 0.5rem; }
-  .result-box.error p { color: #e74c3c; font-size: 0.88rem; }
+.result-box { display: none; border-radius: 10px; padding: 2rem; margin-top: 1rem; text-align: center; }
+.result-box.success { background: #f0f9f4; border: 1px solid #a8d5b5; }
+.result-box.success h3 { color: #1a6b3a; font-size: 1.1rem; margin-bottom: 0.5rem; }
+.result-box.success p { color: #2d8a52; font-size: 0.9rem; }
+.result-box.error { background: #fff5f5; border: 1px solid #f5c6c6; }
+.result-box.error h3 { color: #c0392b; font-size: 1.05rem; margin-bottom: 0.5rem; }
+.result-box.error p { color: #e74c3c; font-size: 0.88rem; }
 
-  footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 2.5rem 2rem; text-align: center; }
-  .footer-brand { font-family: 'Noto Serif KR', serif; color: var(--gold); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
-  .footer-sub { font-size: 0.82rem; margin-bottom: 0.8rem; }
-  .footer-contact { color: rgba(255,255,255,0.85); font-size: 0.95rem; font-weight: 500; margin-bottom: 1rem; }
-  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+footer { background: var(–navy); color: rgba(255,255,255,0.6); padding: 2.5rem 2rem; text-align: center; }
+.footer-brand { font-family: ‘Noto Serif KR’, serif; color: var(–gold); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
+.footer-sub { font-size: 0.82rem; margin-bottom: 0.8rem; }
+.footer-contact { color: rgba(255,255,255,0.85); font-size: 0.95rem; font-weight: 500; margin-bottom: 1rem; }
+.footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
 
-  @media (max-width: 680px) {
-    .why-layout { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .hero-cards { flex-direction: column; align-items: center; }
-    .hero-card { width: 100%; max-width: 300px; }
-  }
+@media (max-width: 680px) {
+.why-layout { grid-template-columns: 1fr; }
+.form-row { grid-template-columns: 1fr; }
+.hero-cards { flex-direction: column; align-items: center; }
+.hero-card { width: 100%; max-width: 300px; }
+}
 </style>
+
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">더 좋은 라이프</div>
+  <div class="nav-logo">어센틱금융그룹</div>
   <a href="#apply-form" class="nav-cta">무료 상담 신청</a>
 </nav>
 
@@ -215,7 +217,7 @@
 <section class="benefits" id="benefits">
   <div class="container">
     <div class="section-label">Benefits</div>
-    <div class="section-title">더 좋은 라이프는 이 모든 것을<br>한 곳에서 준비할 수 있게 해줍니다</div>
+    <div class="section-title">어센틱금융그룹은 이 모든 것을<br>한 곳에서 준비할 수 있게 해줍니다</div>
     <div class="section-sub">필요할 때 필요한 것들을 챙겨주고, 결국 우리 가족의 모든 시간을 더 좋게 만들어줍니다.</div>
     <div class="benefits-grid">
       <div class="benefit-card">
@@ -276,7 +278,7 @@
     <div class="section-sub">많은 분들이 '돌아가셨을 때'만 생각하시는데, 미래를 위한 준비라고 생각합니다.</div>
     <div class="why-layout">
       <div class="why-text">
-        <p>더 좋은 라이프는 <strong>지금부터 시작됩니다.</strong></p>
+        <p>어센틱금융그룹과 함께 <strong>지금부터 시작됩니다.</strong></p>
         <p>지역 상관없이 상담 및 가입 가능합니다.<br>상조를 위한 상조가 아닌 미래를 위한 상조, 저희가 함께 하겠습니다.</p>
       </div>
       <div class="why-points">
@@ -311,83 +313,86 @@
         <small>구좌당 사은품 추가 증정</small>
       </div>
 
-      <form id="consultForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="name">이름 <span>*</span></label>
-            <input class="form-input" id="name" type="text" placeholder="홍길동" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="phone">연락처 <span>*</span></label>
-            <input class="form-input" id="phone" type="tel" placeholder="010-0000-0000" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="age">연령대</label>
-            <select class="form-input form-select" id="age">
-              <option value="">선택</option>
-              <option>20대</option><option>30대</option><option>40대</option>
-              <option>50대</option><option>60대 이상</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="region">거주지역</label>
-            <select class="form-input form-select" id="region">
-              <option value="">선택</option>
-              <option>서울</option><option>경기</option><option>인천</option>
-              <option>부산</option><option>대구</option><option>광주</option>
-              <option>대전</option><option>울산</option><option>세종</option>
-              <option>강원</option><option>충북</option><option>충남</option>
-              <option>전북</option><option>전남</option><option>경북</option>
-              <option>경남</option><option>제주</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="terms-box">
-          <div class="terms-title">약관 동의</div>
-          <div class="term-item">
-            <input type="checkbox" id="term1" required>
-            <label for="term1"><strong>[필수]</strong> 개인정보 수집 및 이용 동의<br>
-            수집항목: 이름, 연락처, 연령대, 거주지역 | 목적: 상담 안내 | 보유기간: 상담 완료 후 1년</label>
-          </div>
-          <div class="term-item">
-            <input type="checkbox" id="term2">
-            <label for="term2"><strong>[선택]</strong> 개인정보 제3자 제공 동의<br>
-            제공대상: 더좋은라이프 제휴사 | 목적: 맞춤 서비스 안내 | 보유기간: 동의 철회 시까지</label>
-          </div>
-          <div class="term-item">
-            <input type="checkbox" id="term3">
-            <label for="term3"><strong>[선택]</strong> 마케팅 활용 동의<br>
-            SMS, 카카오톡 등을 통한 이벤트 및 혜택 정보 안내</label>
-          </div>
-        </div>
-
-        <button type="submit" class="submit-btn" id="submitBtn">
-          <span id="btnText">무료 상담 신청하기</span>
-          <div class="spinner" id="spinner"></div>
-        </button>
-        <p class="form-note">입력하신 정보는 상담 목적으로만 사용되며 안전하게 보호됩니다.</p>
-      </form>
-
-      <div class="result-box success" id="successMsg">
-        <h3>✅ 상담 신청이 완료되었습니다!</h3>
-        <p>빠른 시일 내에 나상균 상담사가 연락드리겠습니다.</p>
+```
+  <form id="consultForm">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="name">이름 <span>*</span></label>
+        <input class="form-input" id="name" type="text" placeholder="홍길동" required>
       </div>
-      <div class="result-box error" id="errorMsg">
-        <h3>⚠️ 전송 중 오류가 발생했습니다</h3>
-        <p id="errorDetail">잠시 후 다시 시도해주시거나 직접 연락해 주세요: 010-7529-5945</p>
+      <div class="form-group">
+        <label class="form-label" for="phone">연락처 <span>*</span></label>
+        <input class="form-input" id="phone" type="tel" placeholder="010-0000-0000" required>
       </div>
     </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="age">연령대</label>
+        <select class="form-input form-select" id="age">
+          <option value="">선택</option>
+          <option>20대</option><option>30대</option><option>40대</option>
+          <option>50대</option><option>60대 이상</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="region">거주지역</label>
+        <select class="form-input form-select" id="region">
+          <option value="">선택</option>
+          <option>서울</option><option>경기</option><option>인천</option>
+          <option>부산</option><option>대구</option><option>광주</option>
+          <option>대전</option><option>울산</option><option>세종</option>
+          <option>강원</option><option>충북</option><option>충남</option>
+          <option>전북</option><option>전남</option><option>경북</option>
+          <option>경남</option><option>제주</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="terms-box">
+      <div class="terms-title">약관 동의</div>
+      <div class="term-item">
+        <input type="checkbox" id="term1" required>
+        <label for="term1"><strong>[필수]</strong> 개인정보 수집 및 이용 동의<br>
+        수집항목: 이름, 연락처, 연령대, 거주지역 | 목적: 상담 안내 | 보유기간: 상담 완료 후 1년</label>
+      </div>
+      <div class="term-item">
+        <input type="checkbox" id="term2">
+        <label for="term2"><strong>[선택]</strong> 개인정보 제3자 제공 동의<br>
+        제공대상: 더좋은라이프 제휴사 | 목적: 맞춤 서비스 안내 | 보유기간: 동의 철회 시까지</label>
+      </div>
+      <div class="term-item">
+        <input type="checkbox" id="term3">
+        <label for="term3"><strong>[선택]</strong> 마케팅 활용 동의<br>
+        SMS, 카카오톡 등을 통한 이벤트 및 혜택 정보 안내</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn" id="submitBtn">
+      <span id="btnText">무료 상담 신청하기</span>
+      <div class="spinner" id="spinner"></div>
+    </button>
+    <p class="form-note">입력하신 정보는 상담 목적으로만 사용되며 안전하게 보호됩니다.</p>
+  </form>
+
+  <div class="result-box success" id="successMsg">
+    <h3>✅ 상담 신청이 완료되었습니다!</h3>
+    <p>빠른 시일 내에 나상균 상담사(010-7529-5945)가 연락드리겠습니다.</p>
+  </div>
+  <div class="result-box error" id="errorMsg">
+    <h3>⚠️ 전송 중 오류가 발생했습니다</h3>
+    <p id="errorDetail">잠시 후 다시 시도해주시거나 직접 연락해 주세요: 010-7529-5945</p>
+  </div>
+</div>
+```
+
   </div>
 </section>
 
 <footer>
-  <div class="footer-brand">더 좋은 라이프</div>
+  <div class="footer-brand">어센틱금융그룹</div>
   <div class="footer-sub">미래를 위한 상조 | 더좋은하이브리드 698</div>
-  <div class="footer-contact">나상균 상담사 : 010 - 7529 - 5945</div>
-  <div class="footer-copy">© 2026 더 좋은 라이프. All rights reserved.</div>
+  <div class="footer-contact">나상균 : 010 - 7529 - 5945</div>
+  <div class="footer-copy">© 2026 어센틱금융그룹 나상균. All rights reserved.</div>
 </footer>
 
 <script>
@@ -418,19 +423,17 @@ document.getElementById('consultForm').addEventListener('submit', async function
   };
 
   try {
-    const res = await fetch('/api/notify', {
+    const res = await fetch('https://formspree.io/f/xlgawqrv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
 
-    const result = await res.json();
-
-    if (res.ok && result.success) {
+    if (res.ok) {
       this.style.display = 'none';
       successMsg.style.display = 'block';
     } else {
-      throw new Error(result.message || '서버 오류');
+      throw new Error('전송 실패');
     }
   } catch (err) {
     errorDetail.textContent = `오류: ${err.message} | 직접 연락: 010-7529-5945`;
@@ -441,5 +444,6 @@ document.getElementById('consultForm').addEventListener('submit', async function
   }
 });
 </script>
+
 </body>
 </html>
